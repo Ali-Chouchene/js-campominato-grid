@@ -18,7 +18,7 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    border: 1px solid white;
+    border: 1px solid green;
     color: white;
 }
 

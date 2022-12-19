@@ -35,9 +35,9 @@ Le validazioni e i controlli possiamo farli anche in un secondo momento.
 // ! FUNCTIONS
 const createCell = (number) => {
     const cell = document.createElement("div");
-    if (number === "101") {
+    if (number === "100") {
         cell.classList.add("celleasy")
-    } else if (number === "82") {
+    } else if (number === "81") {
         cell.classList.add("cellmedium")
     } else {
         cell.classList.add("cellhard")
@@ -56,7 +56,7 @@ btn.addEventListener("click", function () {
     grid.innerHTML = "";
 
     const userChoice = document.getElementById("select").value;
-    for (let i = 1; i < userChoice; i++) {
+    for (let i = 1; i <= userChoice; i++) {
         const cell = createCell(userChoice);
 
         grid.appendChild(cell);
